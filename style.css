@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #181818;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 23%;
+    margin: 3rem auto;
+    background-color: #111;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.output {
+    background-color: #a7af7c;
+    min-height: 100px;
+    border-radius: 8px;
+    grid-column: 1 / -1;
+    text-align: right;
+    padding: 0.5rem 1rem;
+}
+
+.output div:nth-child(2) {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.output div {
+    word-break: break-all;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+button {
+    position: relative;
+    height: 80px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    color: #fff;
+    outline: none;
+    font-size: 1.5rem;
+    background: #191919;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+button.red {
+    background-color: rgb(201, 0, 0);
+}
+
+button.red .inner {
+    width: 85%;
+    box-shadow: inset -10px 0 20px rgba(255, 255, 255, 0.3),
+        inset 10px 10px 20px rgb(201, 0, 0);
+}
+
+button.blue {
+    background-color: #1a76c0;
+}
+
+button.blue .inner {
+    width: 85%;
+    box-shadow: inset -10px 0 20px rgba(255, 255, 255, 0.3),
+        inset 10px 10px 20px #1a76c0;
+}
+
+.inner {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 7%;
+    left: 7%;
+    border-radius: 8px;
+    box-shadow: inset -10px 0 20px rgba(255, 255, 255, 0.1),
+        inset 10px 0 20px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+button.click {
+    animation: click 0.1s ease;
+}
+
+@keyframes click {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .container {
+        width: 90%;
+    }
+}
