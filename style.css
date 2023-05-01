@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 23%;
+    width: 400px;
     margin: 3rem auto;
     background-color: #111;
     padding: 2rem 1rem;
@@ -66,8 +66,7 @@ button.red {
 
 button.red .inner {
     width: 85%;
-    box-shadow: inset -10px 0 20px rgba(255, 255, 255, 0.3),
-        inset 10px 10px 20px rgb(201, 0, 0);
+    box-shadow: inset -10px 0 20px rgba(255, 255, 255, 0.3), inset 10px 10px 20px rgb(201, 0, 0);
 }
 
 button.blue {
@@ -76,8 +75,7 @@ button.blue {
 
 button.blue .inner {
     width: 85%;
-    box-shadow: inset -10px 0 20px rgba(255, 255, 255, 0.3),
-        inset 10px 10px 20px #1a76c0;
+    box-shadow: inset -10px 0 20px rgba(255, 255, 255, 0.3), inset 10px 10px 20px #1a76c0;
 }
 
 .inner {
@@ -87,8 +85,7 @@ button.blue .inner {
     top: 7%;
     left: 7%;
     border-radius: 8px;
-    box-shadow: inset -10px 0 20px rgba(255, 255, 255, 0.1),
-        inset 10px 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: inset -10px 0 20px rgba(255, 255, 255, 0.1), inset 10px 0 20px rgba(0, 0, 0, 0.3);
     pointer-events: none;
 }
 
@@ -110,14 +107,8 @@ button.click {
     }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 400px) {
     .container {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 680px) {
-    .container {
-        width: 90%;
+        width: 95%;
     }
 }
